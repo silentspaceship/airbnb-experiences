@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+nav {
+  height: 70px;
+  display: flex;
+  padding: 20px 36px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.color-gray {
+  color: #918e9b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+strong {
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-logo {
+  height: 30px;
+}
+
+section {
+  padding: 2.25rem;
+}
+
+section:not(:last-child) {
+  padding-bottom: 0.875rem;
+}
+
+.hero-container {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.hero-photo {
+  max-width: 30rem;
+  align-self: center;
+}
+
+.hero-header {
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.hero-text {
+  margin-top: 0;
+
+  color: #222222;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.card-container {
+  width: 11rem;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  margin-right: 1.125rem;
+}
+
+.card-container:last-child {
+  margin-right: 0;
+}
+
+.card-photo-container {
+  display: flex;
+  position: relative;
+  height: 15rem;
+  margin-bottom: 0.625rem;
+}
+
+.card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-status-container {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  width: auto;
+  height: 20px;
+
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  border-radius: 2px;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-status-text {
+  padding: 4px 6px;
+  font-size: 0.625rem;
+  color: #222222;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #222222;
+}
+
+.card-details-item {
+  display: flex;
+  line-height: 110%;
+  margin-bottom: 0.5rem;
+}
+
+.card-details-item:last-child {
+  margin-bottom: 0;
+}
+
+.card-star {
+  width: 12px;
+  height: 12px;
+  padding: 1px;
+  margin-right: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  .hero-photo {
+    max-width: 80vw;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1280px) {
+  nav {
+    padding: 20px 10rem;
+    transition: padding cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  }
+  section {
+    padding: 2.25rem 10rem;
+    transition: padding cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
   }
 }
