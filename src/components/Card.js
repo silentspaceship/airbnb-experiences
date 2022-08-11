@@ -16,7 +16,7 @@ export default function Card(props) {
         <img
           className="card-photo"
           src={`${process.env.PUBLIC_URL}/assets/${props.item.coverImg}`}
-          alt="Katie Zaferes, an olympic swimmer."
+          alt={props.item.imgDescription}
         />
         {badgeText && (
           <div className="card-status-container">
