@@ -2,7 +2,7 @@
   <img src="https://repository-images.githubusercontent.com/523658980/1fe8eaa3-5819-4d5c-a682-a2fe8a5359a0" width="60%">
 </div>
 
-# Getting Started with Create React App
+# Built with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
